@@ -154,7 +154,6 @@ public class SamlWebViewDialog extends DialogFragment {
             webSettings.setUserAgentString(MainApp.getUserAgent());
             webSettings.setSaveFormData(false);
             webSettings.setAllowFileAccess(false);
-            webSettings.setPluginsEnabled(false);
             
             CookieManager cookieManager = CookieManager.getInstance();
             cookieManager.setAcceptCookie(true);
