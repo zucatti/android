@@ -92,7 +92,7 @@ public class InstantUploadBroadcastReceiver extends BroadcastReceiver {
 
         Account account = AccountUtils.getCurrentOwnCloudAccount(context);
         if (account == null) {
-            Log_OC.w(TAG, "No ownCloud account found for instant upload, aborting");
+            Log_OC.w(TAG, "No account found for instant upload, aborting");
             return;
         }
 
@@ -170,7 +170,7 @@ public class InstantUploadBroadcastReceiver extends BroadcastReceiver {
 
         Account account = AccountUtils.getCurrentOwnCloudAccount(context);
         if (account == null) {
-            Log_OC.w(TAG, "No owncloud account found for instant upload, aborting");
+            Log_OC.w(TAG, "No account found for instant upload, aborting");
             return;
         }
 
@@ -214,7 +214,7 @@ public class InstantUploadBroadcastReceiver extends BroadcastReceiver {
         if (instantPictureUploadViaWiFiOnly(context) && !isConnectedViaWiFi(context)){
             Account account = AccountUtils.getCurrentOwnCloudAccount(context);
             if (account == null) {
-                Log_OC.w(TAG, "No owncloud account found for instant upload, aborting");
+                Log_OC.w(TAG, "No account found for instant upload, aborting");
                 return;
             }
 
