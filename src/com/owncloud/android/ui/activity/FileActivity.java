@@ -403,11 +403,6 @@ public class FileActivity extends AppCompatActivity
         // Settings
         mDrawerItems.add(new NavigationDrawerItem(mDrawerTitles[1], mDrawerContentDescriptions[1],
                 R.drawable.ic_settings));
-        // Logs
-        if (BuildConfig.DEBUG) {
-            mDrawerItems.add(new NavigationDrawerItem(mDrawerTitles[2],
-                    mDrawerContentDescriptions[2],R.drawable.ic_log));
-        }
 
         // setting the nav drawer list adapter
         mNavigationDrawerAdapter = new NavigationDrawerListAdapter(getApplicationContext(), this,
@@ -1036,13 +1031,6 @@ public class FileActivity extends AppCompatActivity
                     Intent settingsIntent = new Intent(getApplicationContext(),
                             Preferences.class);
                     startActivity(settingsIntent);
-                    mDrawerLayout.closeDrawers();
-                    break;
-
-                case 2: // Logs
-                    Intent loggerIntent = new Intent(getApplicationContext(),
-                            LogHistoryActivity.class);
-                    startActivity(loggerIntent);
                     mDrawerLayout.closeDrawers();
                     break;
             }
