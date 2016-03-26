@@ -21,7 +21,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context="com.owncloud.android.ui.fragment.EditShareFragment"
+            tools:context="com.cerema.cloud.ui.fragment.EditShareFragment"
             android:id="@+id/shareScroll">
 
     <LinearLayout android:orientation="vertical"

@@ -18,7 +18,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.owncloud.android"
+    package="com.cerema.cloud"
     android:versionCode="10900100"
     android:versionName="1.9.1" >
 
@@ -132,7 +132,7 @@
 
         <provider
             android:name=".providers.UsersAndGroupsSearchProvider"
-            android:authorities="com.owncloud.android.providers.UsersAndGroupsSearchProvider"
+            android:authorities="com.cerema.cloud.providers.UsersAndGroupsSearchProvider"
             android:enabled="true"
             android:exported="false"
             android:label="@string/search_users_and_groups_hint" />
@@ -151,7 +151,7 @@
                 <data android:scheme="@string/oauth2_redirect_scheme" />
             </intent-filter>
             <intent-filter>
-                <action android:name="com.owncloud.android.workaround.accounts.CREATE" />
+                <action android:name="com.cerema.cloud.workaround.accounts.CREATE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

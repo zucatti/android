@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.owncloud.android</groupId>
-    <artifactId>owncloud</artifactId>
+    <groupId>com.cerema.cloud</groupId>
+    <artifactId>ceremacloud</artifactId>
     <version>${owncloud.version}</version>
     <packaging>apk</packaging>
-    <name>Owncloud Android</name>
+    <name>CEREMACloud</name>
 
     <properties>
         <owncloud.version>1.5.1-SNAPSHOT</owncloud.version>
@@ -46,7 +46,7 @@
             <scope>system</scope>
             <systemPath>${basedir}/libs/touch-image-view.jar</systemPath>
         </dependency>
-          
+
         <!-- This causes a (version?) conflict during packaging since sherlockactionbar also includes compatibility-v4 -->
         <!--<dependency>
             <groupId>android.support</groupId>
@@ -93,7 +93,7 @@
 
         <!-- MUST BE INSTALLED FIRST: cd owncloud-android-library; mvn install -->
         <dependency>
-            <groupId>com.owncloud.android</groupId>
+            <groupId>com.cerema.cloud</groupId>
             <artifactId>owncloud-android-library</artifactId>
             <version>${owncloud.version}</version>
         </dependency>
@@ -135,4 +135,3 @@
     </build>
 
 </project>
-
